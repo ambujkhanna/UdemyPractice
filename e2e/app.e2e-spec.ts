@@ -1,14 +1,14 @@
-import { UdemyPracticePage } from './app.po';
+import { AaPage } from './app.po';
 
-describe('udemy-practice App', function() {
-  let page: UdemyPracticePage;
+describe('aa App', () => {
+  let page: AaPage;
 
   beforeEach(() => {
-    page = new UdemyPracticePage();
+    page = new AaPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });
